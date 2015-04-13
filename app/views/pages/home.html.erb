@@ -1,0 +1,14 @@
+<div class="jumbotron center">
+<h1>It Music</h1>
+<p>Follow the Music You've been craving to hear!</p>
+<% if user_signed_in? %>
+	 # Show case Player
+	 <% else %>
+	 <p>
+	 	<%= link_to "Login", new_user_session_path, class: "Btn btn-default btn-lg" %>
+	 	<%= link_to "Sign Up", new_user_registration_path, class: "Btn btn-primary btn-lg" %>
+	 </p>
+	 <% end %>
+	</div>
+
+
